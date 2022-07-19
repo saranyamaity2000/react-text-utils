@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
+import About from './components/About';
 
 function App() {
   // 0 -> light , 1 -> dark 
@@ -22,6 +23,7 @@ function App() {
       <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode} />
       <div className="container my-3">
         <TextForm heading="Enter Text to Analyze" mode={mode} />
+        <About mode={mode} />
       </div>
     </>
   );
